@@ -39,6 +39,10 @@ This report records observations made while building and exercising OriginGuard 
 - Anonymous public reads worked, but the public RPC remains an external availability and rate-limit dependency. The UI reports query failures instead of rendering fallback records.
 - The connected MetaMask browser profile produced one console error from a wallet extension attempting to redefine `window.ethereum`; no OriginGuard source error accompanied it. This was treated as an environment/extension warning, not application success evidence.
 
+## Dependency audit finding
+
+`npm audit --omit=dev --audit-level=high` reported zero production vulnerabilities. A full audit reports five high-severity findings through the development-only ESLint chain (`eslint-config-next@16.4.2` -> `@next/eslint-plugin-next@16.4.2` -> `fast-glob@3.3.1` -> `micromatch@4.0.8` -> `braces@3.0.3`). The advisory has no patched `braces` release in the registry; `npm audit fix --force` proposes the incompatible major downgrade `eslint-config-next@14.2.35`. That breaking downgrade was not applied. The vulnerable package is not included in the production bundle or runtime dependency set; this remains a documented development-toolchain audit finding.
+
 ## Recording protocol
 
 For every verified issue or positive observation, include exact reproduction commands, expected result, actual result, tool versions, date/time, network, relevant tx/entity IDs and diagnostic excerpts with secrets redacted. If no issues occur, report that truthfully with useful positive usability notes and potential future improvements clearly distinguished from confirmed defects. Do not add invented inconvenience to chase rubric points.
