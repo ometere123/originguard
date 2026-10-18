@@ -27,10 +27,10 @@ npm run query:advisories -- --package @example/auth-core --min-severity 3
 npm run query:advisories -- --creator 0xfcef676044658B5402f590daBe9E04A0F640522f --package @example/auth-core --min-severity 3
 ```
 
-Live deployed app URL: PENDING
-Final repository commit SHA: PENDING
-GitHub Actions final run URL: PENDING
-Actual tests: build and live query evidence recorded in the release handoff; CI URL pending final push
+Live deployed app URL: https://originguard-eight.vercel.app/
+Verified deployment source commit SHA: `a03c708c6389347edd2caa4b54cc5b12a9cf4f4b`
+GitHub Actions verified run URL: https://github.com/ometere123/originguard/actions/runs/39130854917
+Actual tests: local lint, typecheck, unit tests, production build, Playwright E2E, live Arkiv smoke/read queries, and the corresponding GitHub Actions jobs passed. The public deployment was independently opened and its live feed returned all three records; the Wallet A creator filter returned A/B and excluded C.
 Demo video URL: PENDING
 Devfolio submission confirmation: PENDING
 

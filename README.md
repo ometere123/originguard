@@ -4,7 +4,7 @@
 
 OriginGuard is an open-source, noncustodial security advisory registry built on the Arkiv Tiramisu Web3 database for Arkiv Global Tour Stop 2026. Its core security premise is simple: a publicly supplied `claimedPublisher` is not authenticating evidence. Arkiv's immutable `$creator` system attribute lets independent clients check which EVM wallet actually created the advisory.
 
-> **Status:** source handoff, NOT a deployed or submitted application. The demo records, transactions, wallet funding, runtime verification, public deployment, video, and actual friction observations are not prefilled or invented. Complete the defined closeout procedure before submitting.
+> **Status:** audited release with three real synthetic Tiramisu entities, a public Vercel deployment, and green GitHub Actions. The public demonstration video and Devfolio submission remain separate human-controlled gates and are not claimed here.
 
 **Competition tracks:** Security (primary), Open Source (secondary). **Licence:** MIT. **Testnet:** Tiramisu, chain `7738577`. **SDK:** `@arkiv-network/sdk@0.8.1`.
 
@@ -19,11 +19,11 @@ The public, queryable entity attributes, indexed immutable creator metadata, wal
 ## Required local setup
 
 1. Install **Node 22.10+**, npm and MetaMask; obtain two dedicated test-only accounts, A and B. Never publish real vulnerability allegations or personal data.
-2. `npm install` **then commit the generated `package-lock.json`**. There is no lockfile in the initial source handoff because the artifact-building environment could not access npm. Never claim `npm ci` works until the genuine lockfile is generated and checked. Pin exact resolved dependencies using that lockfile.
+2. Run `npm ci` from the committed `package-lock.json`. The lockfile is part of the repository and is the reproducible install source.
 3. Copy `.env.example` to `.env.local`. The public default RPC requires no API key. Keep access keys and private keys OUT of `NEXT_PUBLIC_` variables.
 4. `npm run dev` and open http://localhost:3000. Read-only browsing never requires MetaMask.
 5. Configure MetaMask for chain `7738577` (Tiramisu), get **test GLM** from https://hub.arkiv.network/faucet for both A and B, and publish as described below.
-6. Run `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, and `npm run test:e2e` (requires `npx playwright install chromium`).
+6. Run `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, and `npm run test:e2e` (requires `npx playwright install chromium`). The checked-in GitHub Actions workflow runs these gates on Ubuntu with Node 22.
 7. Run `npm run smoke:arkiv` and `npm run query:advisories -- --min-severity 3` while network access is available. Only actual responses count as evidence.
 
 No contracts need deploying. There is no database migration or private-key backend.
@@ -44,6 +44,13 @@ No contracts need deploying. There is no database migration or private-key backe
 5. Click **Verify origin -> Load on-chain demo**. The code independently reads all three entities and refuses to show a forged demonstration if the required invariant is not met.
 
 No fake or seeded local fallback data is provided.
+
+### Live release
+
+- Public application: https://originguard-eight.vercel.app/
+- Public repository: https://github.com/ometere123/originguard
+- CI workflow: https://github.com/ometere123/originguard/actions/workflows/ci.yml
+- Live entity and transaction evidence: [`docs/evidence.md`](docs/evidence.md)
 
 ## Security and trust model
 
@@ -71,4 +78,4 @@ The system checks a **known wallet** against immutable Arkiv `$creator`. It cann
 - [Submission checklist](https://github.com/Arkiv-Network/global-tour-stop-pre-devcon/blob/main/docs/submission-checklist.md)
 - [Arkiv documentation](https://docs.arkiv.network/)
 
-**Submission gate:** Do not claim production readiness, on-chain evidence, successful CI or Devfolio entry until each is actually verified. The official deadline is **18 October 2026, 23:59 London BST = 23:59 Africa/Lagos**.
+**Submission gate:** Production, on-chain evidence, and CI are recorded above and in [`docs/evidence.md`](docs/evidence.md). A public video and Devfolio entry are not claimed until they are actually published and confirmed. The official deadline is **18 October 2026, 23:59 London BST = 23:59 Africa/Lagos**.
