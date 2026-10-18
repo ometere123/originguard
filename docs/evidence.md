@@ -34,7 +34,7 @@ Latest audited code commit used for the final CLI deployment: `1fc515d3f1d34399c
 Latest GitHub Actions run for that commit: https://github.com/ometere123/originguard/actions/runs/39131697461
 Evidence-register CLI deployment: `dpl_UZegH8zCddydbDmRXp3Cfv6JJkTV` (READY; Node 22; production alias verified; superseded by the later handoff deployment verified in the release report)
 Actual tests: local lint, typecheck, unit tests, production build, Playwright E2E, live Arkiv smoke/read queries, and the corresponding GitHub Actions jobs passed. The public deployment was independently opened and its live feed returned all three records; the Wallet A creator filter returned A/B and excluded C.
-Demo video URL: PENDING
+Demo video URL: https://www.youtube.com/watch?v=QGMMb5WKpfY (published unlisted; anyone with the link can view; 2 minutes 54 seconds; verified playing in Chrome on 18 October 2026)
 Devfolio submission confirmation: PENDING
 
 For each real record, save a readable explorer link and a reproduction CLI command. Verify that linked route exists; an unverified URL string is not independent evidence. The live browser and CLI must read identical immutable `creator` for each entity.

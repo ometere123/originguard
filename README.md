@@ -4,7 +4,7 @@
 
 OriginGuard is an open-source, noncustodial security advisory registry built on the Arkiv Tiramisu Web3 database for Arkiv Global Tour Stop 2026. Its core security premise is simple: a publicly supplied `claimedPublisher` is not authenticating evidence. Arkiv's immutable `$creator` system attribute lets independent clients check which EVM wallet actually created the advisory.
 
-> **Status:** audited release with three real synthetic Tiramisu entities, a public Vercel deployment, and green GitHub Actions. The public demonstration video and Devfolio submission remain separate human-controlled gates and are not claimed here.
+> **Status:** audited release with three real synthetic Tiramisu entities, a public Vercel deployment, green GitHub Actions, and an accessible [2:54 demonstration video](https://www.youtube.com/watch?v=QGMMb5WKpfY). Final Devfolio submission remains subject to user review and confirmed acceptance.
 
 **Competition tracks:** Security (primary), Open Source (secondary). **Licence:** MIT. **Testnet:** Tiramisu, chain `7738577`. **SDK:** `@arkiv-network/sdk@0.8.1`.
 
@@ -78,4 +78,4 @@ The system checks a **known wallet** against immutable Arkiv `$creator`. It cann
 - [Submission checklist](https://github.com/Arkiv-Network/global-tour-stop-pre-devcon/blob/main/docs/submission-checklist.md)
 - [Arkiv documentation](https://docs.arkiv.network/)
 
-**Submission gate:** Production, on-chain evidence, and CI are recorded above and in [`docs/evidence.md`](docs/evidence.md). A public video and Devfolio entry are not claimed until they are actually published and confirmed. The official deadline is **18 October 2026, 23:59 London BST = 23:59 Africa/Lagos**.
+**Submission gate:** Production, on-chain evidence, CI and the [accessible demonstration video](https://www.youtube.com/watch?v=QGMMb5WKpfY) are recorded above and in [`docs/evidence.md`](docs/evidence.md). A Devfolio entry is not claimed until submission is confirmed. The official deadline is **18 October 2026, 23:59 London BST = 23:59 Africa/Lagos**.
