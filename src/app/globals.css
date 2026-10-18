@@ -1,0 +1,11 @@
+@import "tailwindcss";
+:root {color-scheme:dark;}
+* {box-sizing:border-box;}
+html {scroll-behavior:smooth;}
+body {background:#07101e;color:#edf4fa;font-family:Arial,Helvetica,sans-serif;}
+button,a,input,textarea,select {touch-action:manipulation;}
+::selection {background:#19c4b7;color:#0b1320;}
+@theme {--color-slate-850:#182538;}
+.card-panel {border:1px solid rgba(148,163,184,.16);background:linear-gradient(150deg,rgba(26,41,59,.78),rgba(10,21,36,.9));border-radius:20px;}
+.mono {font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}
+.scrollbar-muted {scrollbar-color:#334155 transparent;scrollbar-width:thin;}
