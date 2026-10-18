@@ -35,6 +35,13 @@ Latest GitHub Actions run for that commit: https://github.com/ometere123/origing
 Evidence-register CLI deployment: `dpl_UZegH8zCddydbDmRXp3Cfv6JJkTV` (READY; Node 22; production alias verified; superseded by the later handoff deployment verified in the release report)
 Actual tests: local lint, typecheck, unit tests, production build, Playwright E2E, live Arkiv smoke/read queries, and the corresponding GitHub Actions jobs passed. The public deployment was independently opened and its live feed returned all three records; the Wallet A creator filter returned A/B and excluded C.
 Demo video URL: https://www.youtube.com/watch?v=QGMMb5WKpfY (published unlisted; anyone with the link can view; 2 minutes 54 seconds; verified playing in Chrome on 18 October 2026)
-Devfolio submission confirmation: PENDING
+Devfolio submission confirmation: **SUBMITTED**, verified in the authenticated Chrome competition dashboard on 18 October 2026, before the deadline and internal 22:00 Lagos target.
+
+- Public entry: https://devfolio.co/projects/originguard-e564
+- Competition dashboard: https://arkiv.devfolio.co/dashboard
+- Dashboard displayed **SUBMITTED** and: “Congratulations, Ometere! Your project OriginGuard has been published and submitted to Arkiv: Global Tour Stop 🌍.”
+- Independently found OriginGuard in the competition's Projects listing, with the published tagline “Verify advisory creators, not publisher claims.”
+- Public project shows Security and Open Source tracks, repository, deployment and YouTube links, screenshots, and source/AI disclosures.
+- User approved final submission before publication. This confirms receipt, not a judging outcome or organizer eligibility determination.
 
 For each real record, save a readable explorer link and a reproduction CLI command. Verify that linked route exists; an unverified URL string is not independent evidence. The live browser and CLI must read identical immutable `creator` for each entity.
